@@ -1,0 +1,78 @@
+@startuml
+class com.example.laba1.ExampleUnitTest {
++ void addition_isCorrect()
+}
+class com.example.laba1.SecondFragment {
+- FragmentSecondBinding binding
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
++ void onViewCreated(View,Bundle)
++ void onDestroyView()
+}
+class com.example.laba1.databinding.FragmentFirstBinding {
+- ConstraintLayout rootView
++ Button buttonFirst
++ TextView textviewFirst
++ ConstraintLayout getRoot()
++ {static} FragmentFirstBinding inflate(LayoutInflater)
++ {static} FragmentFirstBinding inflate(LayoutInflater,ViewGroup,boolean)
++ {static} FragmentFirstBinding bind(View)
+}
+class com.example.laba1.BuildConfig {
++ {static} boolean DEBUG
++ {static} String APPLICATION_ID
++ {static} String BUILD_TYPE
++ {static} int VERSION_CODE
++ {static} String VERSION_NAME
+}
+class com.example.laba1.FirstFragment {
+- FragmentFirstBinding binding
++ View onCreateView(LayoutInflater,ViewGroup,Bundle)
++ void onViewCreated(View,Bundle)
++ void onDestroyView()
+}
+class com.example.laba1.databinding.ContentMainBinding {
+- ConstraintLayout rootView
++ ConstraintLayout getRoot()
++ {static} ContentMainBinding inflate(LayoutInflater)
++ {static} ContentMainBinding inflate(LayoutInflater,ViewGroup,boolean)
++ {static} ContentMainBinding bind(View)
+}
+class com.example.laba1.databinding.ActivityMainBinding {
+- CoordinatorLayout rootView
++ FloatingActionButton fab
++ Toolbar toolbar
++ CoordinatorLayout getRoot()
++ {static} ActivityMainBinding inflate(LayoutInflater)
++ {static} ActivityMainBinding inflate(LayoutInflater,ViewGroup,boolean)
++ {static} ActivityMainBinding bind(View)
+}
+class com.example.laba1.MainActivity {
+- AppBarConfiguration appBarConfiguration
+- ActivityMainBinding binding
+# void onCreate(Bundle)
++ boolean onCreateOptionsMenu(Menu)
++ boolean onOptionsItemSelected(MenuItem)
++ boolean onSupportNavigateUp()
+}
+class com.example.laba1.databinding.FragmentSecondBinding {
+- ConstraintLayout rootView
++ Button buttonSecond
++ TextView textviewSecond
++ ConstraintLayout getRoot()
++ {static} FragmentSecondBinding inflate(LayoutInflater)
++ {static} FragmentSecondBinding inflate(LayoutInflater,ViewGroup,boolean)
++ {static} FragmentSecondBinding bind(View)
+}
+class com.example.laba1.ExampleInstrumentedTest {
++ void useAppContext()
+}
+
+
+androidx.fragment.app.Fragment <|-- com.example.laba1.SecondFragment
+androidx.viewbinding.ViewBinding <|.. com.example.laba1.databinding.FragmentFirstBinding
+androidx.fragment.app.Fragment <|-- com.example.laba1.FirstFragment
+androidx.viewbinding.ViewBinding <|.. com.example.laba1.databinding.ContentMainBinding
+androidx.viewbinding.ViewBinding <|.. com.example.laba1.databinding.ActivityMainBinding
+androidx.appcompat.app.AppCompatActivity <|-- com.example.laba1.MainActivity
+androidx.viewbinding.ViewBinding <|.. com.example.laba1.databinding.FragmentSecondBinding
+@enduml
