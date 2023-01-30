@@ -86,7 +86,7 @@ if (check.isChecked()) txt1.setText("OK");
 
 <center> Листинг 4.13. Использование кнопки ToggleButton(файл разметки)</center>
 
-```Java
+```
 <?xml version="l.0" encoding="utf-8"?>
 <LinearLayoutxmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
