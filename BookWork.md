@@ -8,10 +8,10 @@
 
 Для демонстрации работы с зависимыми переключателями добавьте в наш проект с кнопкой и текстовым полем два зависимых переключателя с именами rl и r2. По нажатию на кнопку значение текстового поля будет изменено в зависимости от выбранного переключателя. Если ни один из переключателей не выбран, тогда зна­чение *TextView* изменено не будет. Разметка проекта приведена в листинге 4.12.
 
-  <center> Листинг 4.12. Файл разметки проекта(зависимые переключатели) </center>
+  <p align="center">Листинг 4.12. Файл разметки проекта(зависимые переключатели) </p>
 
-  ```Java
-  <?xml version="l.0" encoding="utf-8"?>
+  ```Xml
+<?xml version="l.0" encoding="utf-8"?>
 <RadioGroup xmlns:android="http://schernas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
@@ -47,7 +47,7 @@
 Как видите, все достаточно просто. Готовое приложение показано на рис. 4.19
 (приложение запущено) и 4.20 (выбрано значение *Radiobox 2* и нажата кнопка).
 
-![](C:\Users\Илья\Desktop\assets\assetMD)
+![](MDAssets/assetMD.png)
 
 # CheckBox - независимые переключатели
 
@@ -55,7 +55,7 @@
 
 Для работы с __CheckBox__ вы можете использовать те же методы (*isChecked()*, *toggle ()*, *setChecked ()* ), что и в случае с __RadioButton__. В файле разметки независи­мые переключатели определяются так:
 
-```Java
+```Xml
 <CheckBox
     android:id="@+id/checkbox"
     android:layout_width="wrap_content"
@@ -84,11 +84,11 @@ if (check.isChecked()) txt1.setText("OK");
 
 Добавьте в наш проект кнопку *ToggleButton* и удалите все, что нам не нужно. Пусть в проекте останутся только текстовое поле *TextView*, кнопка *Button* (она нам еще пригодится) и новая кнопка *ToggleButton*. Разметка проекта представлена в листин­ге 4.13.
 
-<center> Листинг 4.13. Использование кнопки ToggleButton(файл разметки)</center>
+<p align="center">Листинг 4.13. Использование кнопки ToggleButton(файл разметки)</p>>
 
-```
+```Xml
 <?xml version="l.0" encoding="utf-8"?>
-<LinearLayoutxmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -112,7 +112,7 @@ if (check.isChecked()) txt1.setText("OK");
 ```
 При нажатии на кнопку *ToggleButton* в зависимости от состояния кнопки будет изменяться значение текстового поля. Этот эффект достигается благодаря обработ­чику события *onCheckedChange*. Код Java представлен в листинге 4.14.
 
-<center>Листинг 4.14. Пример использования кнопки ToggleButton </center>
+<p align="center">Листинг 4.14. Пример использования кнопки ToggleButton </p>
 
 ```Java
 package com.example.ch04;
@@ -147,7 +147,7 @@ import android.widget.ToggleButton;
 ```
 Результат внесенных в код изменений показан на рис. 4.21.
 
-![](C:\Users\Илья\Desktop\assets\assetMD2)
+![](MDAssets/assetMD2.png)
 
 # ImageButton --- кнопка с изображением
 
@@ -156,7 +156,7 @@ import android.widget.ToggleButton;
 
 В файле разметки элемент ```<Imageвutton>``` описывается так:
 
-```Java
+```Xml
 <ImageButton
     android:id="@+id/button"
     android:layout_width="wrap_content"
@@ -182,11 +182,11 @@ button.setImageResource(R.drawable.im);
 
 Начнем с разметки (листинг 4.15). Наша деятельность будет содержать два поля ввода, кнопку и, конечно же, ProgressBar. Редактор разметки для нашего приложе­ния показан на рис. 4.22.
 
-<center>Листинг 4.15. Разметка ProgressBar </center>
+<p align="center">Листинг 4.15. Разметка ProgressBar </p>
 
-```Java
+```Xml
 <?xml version="l.O" encoding="utf-8"?>
-<LinearLayoutxmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -218,4 +218,4 @@ button.setImageResource(R.drawable.im);
 </Button>
 </LinearLayout>
 ```
-![](C:\Users\Илья\Desktop\assets\assetMD3)
+![](MDAssets/assetMD3.png)
