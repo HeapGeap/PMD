@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout02"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/second_back">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="5dp"
+        android:layout_y="530dp"
+        app:srcCompat="@drawable/memory" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_x="14dp"
+        android:layout_y="167dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_x="31dp"
+        android:layout_y="439dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_x="239dp"
+        android:layout_y="317dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="109dp"
+        android:layout_height="96dp"
+        android:layout_x="30dp"
+        android:layout_y="46dp"
+        app:srcCompat="@drawable/processor" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="125dp"
+        android:layout_height="114dp"
+        android:layout_x="246dp"
+        android:layout_y="171dp"
+        app:srcCompat="@drawable/gpu" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="105dp"
+        android:layout_height="94dp"
+        android:layout_x="46dp"
+        android:layout_y="314dp"
+        app:srcCompat="@drawable/fan" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="272dp"
+        android:layout_y="348dp"
+        android:text="Тихий"
+        android:textColor="@color/white" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="272dp"
+        android:layout_y="405dp"
+        android:text="Турбо"
+        android:textColor="@color/white" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="273dp"
+        android:layout_y="466dp"
+        android:text="Баланс"
+        android:textColor="@color/white" />
+
+</AbsoluteLayout>
