@@ -1,5 +1,7 @@
 package com.example.laba1;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -32,6 +34,8 @@ public class SecondActivity extends AppCompatActivity {
     private double Progress_Status3 =0;
 
     private Handler nHandler = new Handler();
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,5 +97,28 @@ public class SecondActivity extends AppCompatActivity {
 
             }
         }).start();
+        AlertDia();
     }
+
+    public void AlertDia(){
+        AlertDialog.Builder alt_bld = new AlertDialog.Builder(this);
+        alt_bld.setMessage("Видим диалоговое окно?")
+                .setCancelable(false)
+                .setPositiveButton("Да", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                })
+                .setNegativeButton("Нет", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+        AlertDialog alert = alt_bld.create();
+        alert.setTitle("Поговорим?");
+        alert.show();
+    }
+
     }

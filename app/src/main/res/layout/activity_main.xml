@@ -53,5 +53,14 @@
         android:textColor="#FFD700"
         android:textColorHint="#FFFFFF" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="14dp"
+        android:layout_y="672dp"
+        android:onClick = "menu_click"
+        android:text="Меню" />
+
 
 </AbsoluteLayout>
