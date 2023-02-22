@@ -118,8 +118,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
     public void on_click(View v){
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
         startActivity(intent);
@@ -130,6 +128,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void transitions_click(View v){
+        Intent intent = new Intent(MainActivity.this, TransitionActivity.class);
+        startActivity(intent);
+    }
 
 
 
