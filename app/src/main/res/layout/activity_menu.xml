@@ -17,6 +17,15 @@
         android:layout_height="wrap_content"
         android:background ="@drawable/rect"
         tools:ignore="MissingConstraints"/>
-    
+
+    <Button
+        android:id="@+id/Track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="341dp"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
