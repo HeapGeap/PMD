@@ -89,5 +89,14 @@
         android:onClick="Namefiles_click"
         android:text="Файлы2" />
 
+    <Button
+        android:id="@+id/sms_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="159dp"
+        android:layout_y="571dp"
+        android:onClick="SmS_Function"
+        android:text="SMS" />
+
 
 </AbsoluteLayout>

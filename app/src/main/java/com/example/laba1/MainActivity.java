@@ -20,11 +20,13 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.telephony.SmsManager;
 import android.view.Gravity;
 import android.view.MenuInflater;
 import android.view.View;
 
 import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -141,6 +143,14 @@ public class MainActivity extends AppCompatActivity {
     public void Namefiles_click(View v){
         Intent intent = new Intent(MainActivity.this, NameFilesActivity.class);
         startActivity(intent);
+    }
+
+
+    public void SmS_Function(View v){
+        SmsManager sendSMS = SmsManager.getDefault();
+        String num = "89515014411";
+        String msg = "Му first SMS";
+        sendSMS.sendTextMessage(num, null, msg, null, null);
     }
 
 
