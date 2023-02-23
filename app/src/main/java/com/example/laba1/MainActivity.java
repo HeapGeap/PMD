@@ -138,6 +138,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void Namefiles_click(View v){
+        Intent intent = new Intent(MainActivity.this, NameFilesActivity.class);
+        startActivity(intent);
+    }
+
 
 
 
