@@ -1,6 +1,7 @@
 package com.example.laba1;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -9,6 +10,7 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -151,6 +153,48 @@ public class MainActivity extends AppCompatActivity {
         String num = "89515014411";
         String msg = "Му first SMS";
         sendSMS.sendTextMessage(num, null, msg, null, null);
+
+        String SENT_SMS_FLAG = "SENТ_SMS";
+        String DELIVER_SMS_FLAG = "DELIVER SMS";
+
+        Intent sent_sms = new Intent(SENT_SMS_FLAG);
+
+        PendingIntent spin = PendingIntent.getBroadcast(this,0,sent_sms,0);
+
+        Intent deliever_sms = new Intent(DELIVER_SMS_FLAG);
+
+        PendingIntent dpin = PendingIntent.getBroadcast(this,0,deliever_sms,0);
+
+        BroadcastReceiver sentReciever = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                switch (getResultCode()){
+                    case Activity.RESULT_OK:
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+
+
+        BroadcastReceiver deliverReciever = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                switch (getResultCode()){
+                    case Activity.RESULT_OK:
+                        break;
+                    default:
+                        break;
+                }
+            }
+        };
+
+        registerReceiver(sentReciever, new IntentFilter(SENT_SMS_FLAG));
+        registerReceiver(deliverReciever, new IntentFilter(DELIVER_SMS_FLAG));
+
+
+
     }
 
 
