@@ -133,6 +133,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void files_click(View v){
+        Intent intent = new Intent(MainActivity.this, FilesActivity.class);
+        startActivity(intent);
+    }
+
 
 
 

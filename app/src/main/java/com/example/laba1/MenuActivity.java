@@ -8,6 +8,7 @@ import android.graphics.drawable.shapes.RectShape;
 import android.graphics.drawable.shapes.Shape;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -24,6 +25,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         Button btn = (Button) findViewById(R.id.Track);
+
 
 
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
@@ -54,6 +56,8 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
 
        /* try {
@@ -82,6 +86,7 @@ public class MenuActivity extends AppCompatActivity {
         mediaPlayer.prepareAsync();
     }
     */
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

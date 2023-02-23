@@ -66,10 +66,19 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="302dp"
+        android:layout_x="280dp"
         android:layout_y="672dp"
         android:onClick ="transitions_click"
         android:text="Картинки" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="162dp"
+        android:layout_y="28dp"
+        android:onClick="files_click"
+        android:text="Файлы" />
 
 
 </AbsoluteLayout>
