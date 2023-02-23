@@ -30,4 +30,19 @@
         tools:layout_editor_absoluteX="Odp"
         tools:layout_editor_absoluteY="93dp" />
 
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="148dp"
+        android:layout_y="666dp"
+        android:onClick="Brows"
+        android:text="Browser" />
+
 </AbsoluteLayout>

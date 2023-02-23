@@ -2,9 +2,13 @@ package com.example.laba1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.TransitionDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -15,6 +19,8 @@ public class TransitionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transition);
         ImageWork();
+
+
     }
 
     public void ImageWork(){
@@ -36,5 +42,10 @@ public class TransitionActivity extends AppCompatActivity {
                 transitionDrawable.reverseTransition(1000);
             }
         });
+    }
+
+    public void Brows(View v){
+        WebView browser = (WebView) findViewById(R.id.webview);
+        browser.loadUrl("https://github.com/HeapGeap");
     }
 }
