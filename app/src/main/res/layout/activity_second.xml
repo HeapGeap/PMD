@@ -91,4 +91,12 @@
         android:text="Баланс"
         android:textColor="@color/white" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="348dp"
+        android:layout_y="6dp"
+        app:srcCompat="@drawable/dbbutt" />
+
 </AbsoluteLayout>

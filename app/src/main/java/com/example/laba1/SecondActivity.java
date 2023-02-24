@@ -2,6 +2,8 @@ package com.example.laba1;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -10,6 +12,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
@@ -33,6 +36,8 @@ public class SecondActivity extends AppCompatActivity {
     private double Progress_Status2 =0;
     private double Progress_Status3 =0;
 
+    public static final String txtData = "123445";
+
     private Handler nHandler = new Handler();
 
 
@@ -41,6 +46,37 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
+
+        MyDatabase mydb = new MyDatabase(this);
+
+        SQLiteDatabase sqdb = mydb.getWritableDatabase();
+
+
+        String insertQuery = "INSERT INTO " +
+                MyDatabase.TABLE_NAME +" (" + MyDatabase.UNAME + ") VALUES ('" +
+                txtData.toString() + "')";
+        sqdb.execSQL(insertQuery);
+
+
+        Cursor cursor = sqdb.query(MyDatabase.TABLE_NAME,new String[]{
+                        MyDatabase.UID,MyDatabase.UNAME},
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        while(cursor.moveToNext()){
+            int id = cursor.getInt(cursor.getColumnIndex(MyDatabase.UID));
+            String name = cursor.getString(cursor.getColumnIndex(MyDatabase.UNAME));
+            Log.i("LOG_TAG", "ROW" + id + "HAS UNAME" + name);
+        }
+        cursor.close();
+
+        sqdb.close();
+        mydb.close();
 
 
 
@@ -120,5 +156,7 @@ public class SecondActivity extends AppCompatActivity {
         alert.setTitle("Поговорим?");
         alert.show();
     }
+
+
 
     }
