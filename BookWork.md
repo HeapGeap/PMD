@@ -11,14 +11,14 @@
   <p align="center">Листинг 4.12. Файл разметки проекта(зависимые переключатели) </p>
 
   ```xml
-<?xml version="l.0" encoding="utf-8"?>
-<RadioGroup xmlns:android="http://schernas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 <RadioButton
-    android:text="RadioЬox 1"
-    android:id="@+id/rl"
+    android:text="Radiobox 1"
+    android:id="@+id/r1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 </RadioButton>
@@ -28,7 +28,7 @@
     android:layout_height="wrap_content">
 </RadioButton>
 <TextView
-    android:id="@+id/txtl"
+    android:id="@+id/txt1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:textSize="20pt"
@@ -37,7 +37,7 @@
 /> 
 <Button
     android:text="OK"
-    android:id="@+id/buttonl"
+    android:id="@+id/button1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 </Button>
@@ -87,14 +87,14 @@ if (check.isChecked()) txt1.setText("OK");
 <p align="center">Листинг 4.13. Использование кнопки ToggleButton(файл разметки)</p>
 
 ```Xml
-<?xml version="l.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
 >
 <TextView
-    android:id="@+id/txtl"
+    android:id="@+id/txt1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:textSize="20pt"
@@ -146,8 +146,7 @@ import android.widget.ToggleButton;
 }
 ```
 Результат внесенных в код изменений показан на рис. 4.21.
-
-![](MDAssets/assetMD2.png)
+<p align="center">     ![](MDAssets/assetMD4.png)   </p>
 
 # ImageButton — кнопка с изображением
 
@@ -185,7 +184,7 @@ button.setImageResource(R.drawable.im);
 <p align="center">Листинг 4.15. Разметка ProgressBar </p>
 
 ```Xml
-<?xml version="l.O" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
@@ -198,7 +197,7 @@ button.setImageResource(R.drawable.im);
 </TextView>
 <EditText android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="lOO"
+    android:text="1OO"
     android:id="@+id/maximum">
 </EditText>
 <TextView android:id="@+id/TextView01"
