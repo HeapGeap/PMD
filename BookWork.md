@@ -146,7 +146,7 @@ import android.widget.ToggleButton;
 }
 ```
 Результат внесенных в код изменений показан на рис. 4.21.
-![](MDAssets/assetMD4.png) 
+<p align="center">![](MDAssets/assetMD4.jpg) </p>
 
 # ImageButton — кнопка с изображением
 
