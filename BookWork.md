@@ -50,7 +50,8 @@
 ![](MDAssets/assetMD5.jpg)
 <p align="center">Рис 4.19. Демонстрация использования зависимых переключателей: приложение запущено </p>
 
-![](MDAssets/assetMD.png)
+![](MDAssets/assetMD6.jpg)
+<p align="center">Рис 4.20. Демонстрация использования зависимых переключателей: выбрано значение RadioBox 2 и нажата кнопка</p>
 
 # CheckBox — независимые переключатели
 
@@ -150,6 +151,7 @@ import android.widget.ToggleButton;
 ```
 Результат внесенных в код изменений показан на рис. 4.21.
 ![](MDAssets/assetMD4.jpg) 
+<p align="center">Рис 4.21. Так выглядит кнопка ToogleButton в работе </p>
 
 # ImageButton — кнопка с изображением
 
@@ -220,4 +222,5 @@ button.setImageResource(R.drawable.im);
 </Button>
 </LinearLayout>
 ```
-![](MDAssets/assetMD3.png)
+![](MDAssets/assetMD7.jpg)
+<p align="center">Рис 4.22. Редактор разметки: графическое представление ProgressBar </p>
