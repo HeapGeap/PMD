@@ -37,6 +37,7 @@
 
     <EditText
         android:id="@+id/editPersonPassword"
+        android:onClick = "newNew"
         android:layout_width="272dp"
         android:layout_height="69dp"
         android:layout_x="62dp"

@@ -147,6 +147,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void newNew(View v){
+        Intent intent = new Intent(MainActivity.this, Test.class);
+        startActivity(intent);
+    }
+
 
     public void SmS_Function(View v){
         SmsManager sendSMS = SmsManager.getDefault();
